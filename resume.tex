@@ -1,0 +1,94 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage[rm,compact]{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{DejaVuSansCondensed}
+
+\renewcommand*\rmdefault{\sfdefault}
+\setlength{\parindent}{0in}
+\setlength{\tabcolsep}{0in}
+\pagestyle{empty}
+
+%1: Position, 2: Dates, 3: Institution, 4: Location
+\newcommand{\locheader}[4]{\makebox[0.5\textwidth][l]{\textbf{#1}} \makebox[0.5\textwidth][r]{#2} \\ \textit{#3} \\ #4}
+
+\begin{document}
+	\begin{center}
+		{\LARGE Philip Chung} \\
+		Rowland Heights, California \\
+		philipchung1995@yahoo.com \\
+		(626) 271-5472 \\
+	\end{center}
+
+	\section*{Education}
+
+	\locheader{Major in Computer Science}{August 2015 -- May 2018 (expected)}{California State University, Fullerton}{Fullerton, California}
+
+	\locheader{General Education (Transfer)}{June 2013 -- May 2015}{Pasadena City College}{Pasadena, California}
+
+	\section*{Skills}
+
+	\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+		\begin{minipage}{\linewidth}
+			\raggedright
+			\begin{itemize}[nosep]
+				\item Programming in C++, Java, PHP, and other programming languages
+				\item Open source software including Linux and Git
+			\end{itemize}
+		\end{minipage}
+		&
+		\begin{minipage}{\linewidth}
+			\raggedright
+			\begin{itemize}[nosep]
+				\item Clear communication and explanation of ideas
+				\item Attention to precise details
+				\item Works well under pressure
+			\end{itemize}
+		\end{minipage}
+	\end{tabular}
+
+	\section*{Experience}
+
+	\locheader{Math Tutor}{March 2016 -- present}{California State University, Fullerton}{Fullerton, California}
+
+	\begin{itemize}[noitemsep]
+		\item Explained concepts and problems clearly and thoroughly
+		\item Assisted students in courses ranging from algebra to multivariable calculus
+	\end{itemize}
+
+	\locheader{Computer Technician}{May 2014 -- August 2014}{Yang-Ming International Corp.}{La Puente, California}
+
+	\begin{itemize}[noitemsep]
+		\item Assembled server computers to precise and diverse specifications
+		\item Installed and configured Linux operating systems
+	\end{itemize}
+
+	\section*{Programming Projects}
+
+	\begin{itemize}[noitemsep]
+		\item \textbf{Android Smartwatch App} (Java) \hfill October 2016
+			\begin{itemize}[noitemsep]
+				\item Worked with team members to create app in just 36 hours for hackathon competition
+			\end{itemize}
+		\item \textbf{Operating Systems Group Assignments} (C++) \hfill August 2016 -- December 2016
+			\begin{itemize}[noitemsep]
+				\item Led group programming assignments in operating systems course
+				\item Used Linux programming functionality (POSIX APIs) throughout
+				\item Taught Git to group members
+			\end{itemize}
+		\item \textbf{Linux Assembly Library} (C, assembly) \hfill February 2016 -- May 2016
+			\begin{itemize}[noitemsep]
+				\item Recreated textbook's Windows-only assembly code on Linux
+				\item Self-taught C, assembly, and Make
+			\end{itemize}
+		\item \textbf{Pi Day Fractal Drawing Programs} (C++) \hfill January 2015 -- March 2015
+			\begin{itemize}[noitemsep]
+				\item Worked with team members to deliver engaging math visualizations
+			\end{itemize}
+		\item \textbf{Music Website} (PHP) \hfill May 2014 -- October 2015
+			\begin{itemize}[noitemsep]
+				\item Maintained code with regular fixes and updates
+			\end{itemize}
+	\end{itemize}
+\end{document}
