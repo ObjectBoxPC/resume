@@ -1,5 +1,5 @@
 \documentclass[10pt]{article}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1in,left=1.5in]{geometry}
 \usepackage{enumitem}
 \usepackage[rm,compact]{titlesec}
 \usepackage[T1]{fontenc}
@@ -10,9 +10,10 @@
 \setlength{\tabcolsep}{0in}
 \pagestyle{empty}
 \raggedright
+\reversemarginpar
 
 %1: Position, 2: Dates, 3: Institution, 4: Location
-\newcommand{\locheader}[4]{\textbf{#1} \hfill #2 \\ \textit{#3} \\ #4}
+\newcommand{\locheader}[4]{\textbf{#1} \marginpar{#2} \\ \textit{#3} \\ #4}
 
 \begin{document}
 	\begin{center}
