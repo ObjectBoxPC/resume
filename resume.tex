@@ -1,6 +1,6 @@
 \documentclass[10pt]{article}
 \usepackage{fontspec}
-\usepackage[margin=1in,left=1.75in,marginparwidth=1.25in]{geometry}
+\usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
 \usepackage[rm,compact]{titlesec}
 
@@ -10,10 +10,9 @@
 \setlength{\tabcolsep}{0in}
 \pagestyle{empty}
 \raggedright
-\reversemarginpar
 
 %1: Title, 2: Dates, 3: Institution/Location
-\newcommand{\baseheader}[3]{#1 \marginpar{\raggedleft #2} \\ #3}
+\newcommand{\baseheader}[3]{#1 \hfill #2 \\ #3}
 
 %1: Position, 2: Dates, 3: Institution, 4: Location
 \newcommand{\locheader}[4]{\baseheader{\textbf{#1}}{#2}{#3 (#4)}}
