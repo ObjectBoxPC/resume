@@ -35,28 +35,18 @@
 
 	\section*{Skills}
 
-	\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
-		\begin{minipage}[t]{\linewidth}
-			\raggedright
-			\begin{itemize}[nosep]
-				\item Back-end Web development using MVC frameworks, integrating with database and cache systems
-				\item Front-end Web development using JavaScript technologies including Ember and Node.js
-				\item Linux configuration and Bash scripting
-			\end{itemize}
-		\end{minipage}
-		&
-		\begin{minipage}[t]{\linewidth}
-			\raggedright
-			\begin{itemize}[nosep]
-				\item Windows desktop development using WinForms and WPF
-				\item Code quality practices (SOLID, TDD)
-				\item Working with existing legacy code
-				\item Git version control
-				\item Learns quickly
-				\item Clear communication of ideas
-			\end{itemize}
-		\end{minipage}
-	\end{tabular}
+	%1: Skill heading, 2: Subskills
+	\newcommand{\skillitem}[2]{\item \textbf{#1}: #2}
+
+	\begin{itemize}
+		\skillitem{Windows application development}{C\#, .NET, C++, WPF, WinForms}
+		\skillitem{Front-end Web development}{JavaScript, Ember, Node.js}
+		\skillitem{Back-end Web development}{MVC frameworks, SQL, MongoDB (NoSQL), Redis}
+		\skillitem{Linux}{Linux administration, Bash scripting}
+		\skillitem{Code quality practices}{SOLID, TDD, OOP, ``clean code''}
+		\skillitem{Communication}{Clear written and oral communication}
+		\skillitem{Problem solving}{Fast learner, working with large amounts of existing code}
+	\end{itemize}
 
 	\section*{Experience}
 
