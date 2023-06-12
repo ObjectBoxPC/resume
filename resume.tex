@@ -2,7 +2,7 @@
 \usepackage{fontspec}
 \usepackage[margin=1in]{geometry}
 \usepackage{enumitem}
-\usepackage[rm,compact]{titlesec}
+\usepackage[explicit]{titlesec}
 
 \setmainfont{DejaVu Sans Condensed}
 
@@ -12,6 +12,9 @@
 \raggedright
 
 \setlist{noitemsep,topsep=0.5em}
+
+\titleformat{\section}{\Large}{\thesection}{1em}{#1 \hrulefill}
+\titlespacing*{\section}{0em}{1em}{0.5em}
 
 %1: Title, 2: Dates
 \newcommand{\titleheader}[2]{\textbf{#1}, #2}
