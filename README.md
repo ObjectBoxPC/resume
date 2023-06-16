@@ -6,7 +6,7 @@ This is my résumé in TeX format for print and PDF. A PDF version is also avail
 
 * LaTeX
 * XeTeX
-* Font family: [DejaVu Sans Condensed](https://dejavu-fonts.github.io/)
+* Font family: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans)
 
 ## Tailored Résumés
 
