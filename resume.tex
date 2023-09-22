@@ -5,6 +5,7 @@
 \usepackage[explicit]{titlesec}
 
 \setmainfont{Noto Sans}
+\newfontfamily{\symbolfont}{Noto Sans Symbols2}
 
 \setlength{\parindent}{0in}
 \setlength{\tabcolsep}{0in}
@@ -13,7 +14,7 @@
 
 \setlist{noitemsep,topsep=0.5em}
 
-\titleformat{\section}{\addfontfeatures{SizeFeatures={Size=18}}}{\thesection}{1em}{#1 \hrulefill}
+\titleformat{\section}{\addfontfeatures{SizeFeatures={Size=18}}}{\thesection}{1em}{\raisebox{0.1em}{\symbolfont \symbol{"25B6}} #1 \hrulefill}
 \titlespacing*{\section}{0em}{1em}{0.5em}
 
 %1: Title, 2: Dates
