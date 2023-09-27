@@ -1,39 +1,39 @@
 \documentclass[12pt]{article}
 \usepackage{fontspec}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[margin=0.5in,left=0.75in]{geometry}
 \usepackage{enumitem}
+\usepackage{changepage}
 \usepackage[explicit]{titlesec}
 
 %Define main font family
 \setmainfont{Noto Sans}
-%Define font for section heading symbol
-%(If the main font family provides it already, you can use the same one here)
-\newfontfamily{\symbolfont}{Noto Sans Symbols2}
 
 \setlength{\parindent}{0in}
 \pagestyle{empty}
 \raggedright
 
-\setlist{noitemsep,topsep=0.5em}
+\setlist{noitemsep,topsep=0.5em,left=0.125in .. 0.25in}
 
 %Format for section headings
-\titleformat{\section}{\addfontfeatures{SizeFeatures={Size=18}}}{\thesection}{1em}{\raisebox{0.1em}{\symbolfont \symbol{"25B6}} #1 \hrulefill}
-\titlespacing*{\section}{0em}{1em}{0.5em}
+\titleformat{\section}{\addfontfeatures{SizeFeatures={Size=18}}}{\thesection}{1em}{#1 \hrulefill}
+\titlespacing*{\section}{-0.25in}{1em}{0.5em}
 
 %Header line for job title (1: Title, 2: Dates)
 \newcommand{\titleheader}[2]{\textbf{#1} \symbol{"B7} #2}
 
 %Secondary header line for job title (1: Title, 2: Dates)
-\newcommand{\secondaryheader}[2]{\hspace{0.25in} \textit{#1} \symbol{"B7} #2}
+\newcommand{\secondaryheader}[2]{\begin{adjustwidth}{0.125in}{}\textit{#1} \symbol{"B7} #2\end{adjustwidth}}
 
 %Header line for organization (%1: Organization, 2: Location)
 \newcommand{\locheader}[2]{#1 (#2)}
 
 \begin{document}
-	\begin{center}
-		{\addfontfeatures{SizeFeatures={Size=24}} Philip Chung} \\ \vspace{0.5em}
-		Rowland Heights, California \symbol{"B7} philipchung1995@yahoo.com \symbol{"B7} (626) 271-5472
-	\end{center}
+	\begin{adjustwidth}{-0.25in}{}
+		\begin{center}
+			{\addfontfeatures{SizeFeatures={Size=24}} Philip Chung} \\ \vspace{0.5em}
+			Rowland Heights, California \symbol{"B7} philipchung1995@yahoo.com \symbol{"B7} (626) 271-5472
+		\end{center}
+	\end{adjustwidth}
 
 	\section*{Summary}
 
@@ -44,7 +44,7 @@
 	%Skill list item (1: Skill heading, 2: Subskills)
 	\newcommand{\skillitem}[2]{\item \textbf{#1}: #2}
 
-	\begin{itemize}
+	\begin{itemize}[left=0in .. 0.125in]
 		\skillitem{Back-end Web development}{C\#, ASP.NET Core, SQL Server, Redis}
 		\skillitem{Front-end Web development}{JavaScript, TypeScript, Vue, React, Node.js}
 		\skillitem{Cloud infrastructure}{Docker, Kubernetes, Azure DevOps, Jenkins, Bash scripting}
