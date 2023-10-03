@@ -2,7 +2,7 @@
 \usepackage{changepage}
 \usepackage{enumitem}
 \usepackage{fontspec}
-\usepackage[margin=0.5in,left=0.75in]{geometry}
+\usepackage[margin=0.5in]{geometry}
 \usepackage[explicit]{titlesec}
 
 %Define main font family
@@ -28,12 +28,12 @@
 \newcommand{\locheader}[2]{#1 (#2)}
 
 \begin{document}
-	\begin{adjustwidth}{-0.25in}{}
-		\begin{center}
-			{\addfontfeatures{SizeFeatures={Size=24}} Philip Chung} \\ \vspace{0.5em}
-			Rowland Heights, California \symbol{"B7} philipchung1995@yahoo.com \symbol{"B7} (626) 271-5472
-		\end{center}
-	\end{adjustwidth}
+	\begin{center}
+		{\addfontfeatures{SizeFeatures={Size=24}} Philip Chung} \\ \vspace{0.5em}
+		Rowland Heights, California \symbol{"B7} philipchung1995@yahoo.com \symbol{"B7} (626) 271-5472
+	\end{center}
+
+	\begin{adjustwidth}{0.25in}{}
 
 	\section*{Summary}
 
@@ -92,4 +92,6 @@
 	\section*{Education}
 
 	\textbf{Bachelor of Science, Computer Science} \symbol{"B7} California State University, Fullerton
+
+	\end{adjustwidth}
 \end{document}
