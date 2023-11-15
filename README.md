@@ -6,7 +6,7 @@ This is my résumé in TeX format for print and PDF. A PDF version is also avail
 
 * XeLaTeX (XeTeX and LaTeX)
 * TeX packages: changepage, enumitem, fontspec, geometry, titlesec
-* Font family: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) (see "Fonts" section)
+* Fonts: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) and [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif) (see "Fonts" section)
 
 ## Usage
 
@@ -14,7 +14,7 @@ Run XeLaTeX on `resume.tex` to generate a PDF file. On the command line this wou
 
 ## Fonts
 
-The fonts in the résumé must be installed on the system, or else XeLaTeX will fail. If you don't want to install a new font, you can change the `\setmainfont` command to use specific font files without installing them (refer to the [fontspec package documentation](https://ctan.org/pkg/fontspec) for more information).
+The fonts in the résumé should be installed on the system. If you don't want to install a new font, you can change the `\setmainfont` and `\newfontfamily` commands to use specific font files without installing them (refer to the [fontspec package documentation](https://ctan.org/pkg/fontspec) for more information).
 
 ## Tailored Résumés
 
