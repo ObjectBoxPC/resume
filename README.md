@@ -1,6 +1,6 @@
 # My Résumé
 
-This is my résumé in TeX format for print and PDF. A PDF version is also available on [my website](https://objectboxpc.name/resume/).
+This is my résumé in TeX format for print and PDF. The PDF version can be downloaded from [my website](https://objectboxpc.name/resume/).
 
 ## Requirements
 
