@@ -20,9 +20,9 @@ The fonts in the résumé should be installed on the system. If you don't want t
 
 Since a résumé should be tailored for a particular employer or application, a shell script `make-indiv.sh` is provided to create a new copy of the résumé in a subdirectory.
 
-Usage: `./make-indiv.sh {name}`
+Usage: `sh make-indiv.sh {name}`
 
-This creates a new directory with the name preceded by an underscore and copies the résumé into it. For example, `./make-indiv.sh xyzco` creates a directory called `_xyzco`. (The underscore is so that the directory will be ignored by Git through the `.gitignore` configuration.)
+This creates a new directory with the name preceded by an underscore and copies the résumé into it. For example, `sh make-indiv.sh xyzco` creates a directory called `_xyzco`. (The underscore is so that the directory will be ignored by Git through the `.gitignore` configuration.)
 
 Note that the file name of the new copy reflects my name. If you want to use this script for yourself, you should edit the script to reflect your own name.
 
