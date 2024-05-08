@@ -20,8 +20,14 @@
 \titleformat{\section}{\headerfont\fontsize{16pt}{16pt}\selectfont}{\thesection}{1em}{#1}
 \titlespacing*{\section}{0in}{1em}{0.25em}
 
-%Primary header line for experience (1: Title, 2: Dates, 3: Organization, 4: Location)
-\newcommand{\primaryheader}[4]{\textbf{#1}\ifthenelse{\equal{#3}{}}{}{ \symbol{"B7} #3 (#4)} \hfill #2}
+%Primary header line for experience and education (1: Title, 2: Dates, 3: Organization, 4: Location)
+\newcommand{\primaryheader}[4]{
+	\textbf{#1}
+	\ifthenelse{\equal{#3}{}}{}{%Comment to avoid extra space before dot
+		\symbol{"B7} #3 \ifthenelse{\equal{#4}{}}{}{ (#4)}
+	}
+	\hfill #2
+}
 
 %Secondary header line for job title (1: Title, 2: Dates)
 \newcommand{\secondaryheader}[2]{\begin{adjustwidth}{0.25in}{}\textit{#1} \hfill #2\end{adjustwidth}}
@@ -89,5 +95,5 @@
 
 	\section*{Education}
 
-	\textbf{Bachelor of Science in Computer Science} \symbol{"B7} California State University, Fullerton
+	\primaryheader{Bachelor of Science in Computer Science}{}{California State University, Fullerton}{}
 \end{document}
