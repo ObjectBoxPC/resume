@@ -3,6 +3,7 @@
 \usepackage{enumitem}
 \usepackage{fontspec}
 \usepackage[margin=0.5in]{geometry}
+\usepackage{ifthen}
 \usepackage[explicit]{titlesec}
 
 %Define font families
@@ -20,13 +21,10 @@
 \titlespacing*{\section}{0in}{1em}{0.25em}
 
 %Primary header line for experience (1: Title, 2: Dates, 3: Organization, 4: Location)
-\newcommand{\primaryheader}[4]{\textbf{#1} \symbol{"B7} #3 (#4) \hfill #2}
+\newcommand{\primaryheader}[4]{\textbf{#1}\ifthenelse{\equal{#3}{}}{}{ \symbol{"B7} #3 (#4)} \hfill #2}
 
 %Secondary header line for job title (1: Title, 2: Dates)
 \newcommand{\secondaryheader}[2]{\begin{adjustwidth}{0.25in}{}\textit{#1} \hfill #2\end{adjustwidth}}
-
-%Header line for job title (1: Title, 2: Dates)
-\newcommand{\titleheader}[2]{\textbf{#1} \hfill #2}
 
 \begin{document}
 	\begin{center}
@@ -52,7 +50,7 @@
 
 	\section*{Experience}
 
-	\titleheader{Professionally Active Career Break}{7/2023 -- Present}
+	\primaryheader{Professionally Active Career Break}{7/2023 -- Present}{}{}
 
 	\begin{itemize}
 		\item Laid off from previous position due to company acquisition and restructuring
