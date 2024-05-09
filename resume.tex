@@ -24,7 +24,7 @@
 \newcommand{\primaryheader}[4]{
 	\textbf{#1}
 	\ifthenelse{\equal{#3}{}}{}{%Comment to avoid extra space before dot
-		\symbol{"B7} #3 \ifthenelse{\equal{#4}{}}{}{ (#4)}
+		\symbol{"B7} #3 \ifthenelse{\equal{#4}{}}{}{(#4)}
 	}
 	\hfill #2
 }
