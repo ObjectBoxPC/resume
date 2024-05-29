@@ -4,6 +4,7 @@
 \usepackage{fontspec}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{ifthen}
+\usepackage[absolute]{textpos}
 \usepackage[explicit]{titlesec}
 
 %Define font families
@@ -33,19 +34,22 @@
 \newcommand{\secondaryheader}[2]{\begin{adjustwidth}{0.25in}{}\textit{#1} \hfill #2\end{adjustwidth}}
 
 \begin{document}
-	\begin{center}
-		{\headerfont\fontsize{24pt}{24pt}\selectfont Philip Chung}
+	{\headerfont\fontsize{24pt}{24pt}\selectfont Philip Chung}
 
-		\vspace{0.5em}
+	\begin{textblock*}{2.5in}(5.5in,0.625in)
+		\fontsize{12pt}{18pt}\selectfont
+		\raggedleft
+		Rowland Heights, California \\ philipchung1995@yahoo.com \\ (626) 271-5472
+	\end{textblock*}
 
-		Rowland Heights, California \symbol{"B7} philipchung1995@yahoo.com \symbol{"B7} (626) 271-5472
-	\end{center}
+	\vspace{0.5em}
 
-	\vspace{-0.5em}
+	\begin{adjustwidth}{}{3in}
+		\fontsize{10pt}{12pt}\selectfont
+		Software developer with 5 years of experience building full-stack Web applications serving thousands to millions of users and customers. Adaptable to a variety of environments and technologies. Emphasis on reliability with a sharp eye for subtle issues.
+	\end{adjustwidth}
 
-	{\fontsize{10pt}{10pt}\selectfont Software developer with 5 years of experience building full-stack Web applications serving thousands to millions of users and customers. Adaptable to a variety of environments and technologies. Emphasis on reliability with a sharp eye for subtle issues.}
-
-	\rule{\textwidth}{1pt}
+	\rule{4.75in}{1pt}
 
 	\section*{Skills}
 
