@@ -27,11 +27,11 @@
 	\ifthenelse{\equal{#3}{}}{}{%Comment to avoid extra space before dot
 		\symbol{"B7} #3 \ifthenelse{\equal{#4}{}}{}{(#4)}
 	}
-	\hfill #2
+	\hfill #2%Comment to avoid extra space after dates
 }
 
 %Secondary header line for job title (1: Title, 2: Dates)
-\newcommand{\secondaryheader}[2]{\begin{adjustwidth}{0.25in}{}\textit{#1} \hfill #2\end{adjustwidth}}
+\newcommand{\secondaryheader}[2]{\begin{adjustwidth}{0.25in}{}\textit{#1 \hfill #2}\end{adjustwidth}}
 
 \begin{document}
 	{\headerfont\fontsize{24pt}{24pt}\selectfont Philip Chung}
@@ -88,6 +88,10 @@
 	\end{itemize}
 
 	\primaryheader{Software Development Engineer}{12/2018 -- 3/2022}{iHerb}{Remote/Irvine, California}
+
+	\secondaryheader{Software Development Engineer II}{7/2021 -- 3/2022}
+
+	\secondaryheader{Software Development Engineer I}{12/2018 -- 6/2021}
 
 	\begin{itemize}
 		\item Launched 20+ localized shipping options for global online retailer of health and beauty products with 10M+ customers, using C\#/ASP.NET Core Web API services
