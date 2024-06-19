@@ -5,7 +5,7 @@ This is my résumé in TeX format for print and PDF. The PDF version can be down
 ## Requirements
 
 * XeLaTeX (XeTeX and LaTeX)
-* TeX packages: changepage, enumitem, ifthen, fontspec, geometry, textpos, titlesec
+* TeX packages: changepage, enumitem, ifthen, fontspec, geometry, titlesec
 * Fonts: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) and [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif) (see "Fonts" section)
 
 ## Usage
