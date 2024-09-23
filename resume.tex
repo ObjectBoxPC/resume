@@ -20,13 +20,12 @@
 \titleformat{\section}{\headerfont\fontsize{16pt}{16pt}\selectfont}{\thesection}{1em}{#1}
 \titlespacing*{\section}{0in}{1em}{0.5em}
 
-%Primary header line for experience and education (1: Title, 2: Dates, 3: Organization, 4: Location)
-\newcommand{\primaryheader}[4]{
-	\textbf{#1}
-	\ifthenelse{\equal{#3}{}}{}{%Comment to avoid extra space before dot
-		\symbol{"B7} #3 \ifthenelse{\equal{#4}{}}{}{(#4)}
+%Primary header line for experience and education (1: Title, 2: Dates, 3: Organization, 4: Location, 5: Description)
+\newcommand{\primaryheader}[5]{
+	\textbf{#1} \ifthenelse{\equal{#2}{}}{}{\symbol{"B7} #2} \\
+	\ifthenelse{\equal{#3}{}}{}{
+		#3 \ifthenelse{\equal{#4}{}}{}{(#4)} \ifthenelse{\equal{#5}{}}{}{\symbol{"B7} \textit{#5}}
 	}
-	\hfill #2%Comment to avoid extra space after dates
 }
 
 %Secondary header line for job title (1: Title, 2: Dates)
@@ -55,14 +54,14 @@
 
 	\section*{Experience}
 
-	\primaryheader{Web Developer (Volunteer)}{1/2024 -- Present}{PNW}{Remote}
+	\primaryheader{Web Developer (Volunteer)}{1/2024 -- Present}{PNW}{Remote}{Annual art and community event}
 
 	\begin{itemize}
-		\item Migrated to new Web application using Angular and C\#/ASP.NET Core to simplify agenda submissions for annual art and community event, taking on project within first three months and completing ahead of schedule
+		\item Migrated to new Web application using Angular and C\#/ASP.NET Core to simplify agenda submissions, taking on project within first three months and completing ahead of schedule
 		\item Published vital event information on website, collaborating across multiple departments and engaging with attendee feedback to provide clear and accessible communications
 	\end{itemize}
 
-	\primaryheader{Career Break}{7/2023 -- 1/2024}{}{}
+	\primaryheader{Career Break}{7/2023 -- 1/2024}{}{}{}
 
 	\begin{itemize}
 		\item Member of development team laid off due to company acquisition
@@ -70,18 +69,18 @@
 		\item Created Web application with Vue to host audience participation game, providing a smoother event experience by replacing paper notes with digital presentation
 	\end{itemize}
 
-	\primaryheader{Applications Developer}{7/2022 -- 7/2023}{Life Storage}{Remote}
+	\primaryheader{Applications Developer}{7/2022 -- 7/2023}{Life Storage}{Remote}{Self-storage chain with 1000+ facilities nationwide}
 
 	\begin{itemize}
-		\item Led development on more efficient Web application using Vue and ASP.NET Core to manage employee access to 1000+ self-storage facilities nationwide, cutting setup times in half
+		\item Led development on more efficient Web application using Vue and ASP.NET Core to manage employee access, cutting setup times in half
 		\item Implemented features in Web-based dashboard to track customer leads and generate invoices, ensuring smooth operation across all facilities
 		\item Investigated SQL Server databases and reported recurring issues with slow data retrieval
 	\end{itemize}
 
-	\primaryheader{Software Development Engineer I--II}{12/2018 -- 3/2022}{iHerb}{Remote/Irvine, California}
+	\primaryheader{Software Development Engineer I--II}{12/2018 -- 3/2022}{iHerb}{Remote/Irvine, California}{Online health and beauty retailer with 10M+ customers globally}
 
 	\begin{itemize}
-		\item Integrated REST and SOAP/XML Web APIs using .NET Core and .NET Framework to process shipment data for 30+ international shipping services and deliver health and beauty products to 10M+ customers worldwide
+		\item Integrated REST and SOAP/XML Web APIs using .NET Core and .NET Framework to process real-time shipment data for 30+ international shipping services
 		\item Built CI/CD pipelines in Azure DevOps and Jenkins to automatically test Web services and reduce turnaround times for changing data requirements
 		\item Deployed and maintained Web services in Kubernetes on AWS and GCP cloud platforms, addressing incidents to ensure round-the-clock operation
 		\item Enhanced Web-based configuration tool using React to enable logistics teams to set up and configure shipping services
@@ -100,5 +99,6 @@
 
 	\section*{Education}
 
-	\primaryheader{Bachelor of Science in Computer Science}{}{California State University, Fullerton}{}
+	%Institution is intentionally in the wrong place to fit this on one line
+	\primaryheader{Bachelor of Science in Computer Science}{California State University, Fullerton}{}{}{}
 \end{document}
